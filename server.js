@@ -1,30 +1,26 @@
-//import { createServer } from 'node:http'
-
-//const server = createServer((request, response) => {
-//    response.write('hello')
-//    return response.end()
-//})
-
-//server.listen(3333)
-
-// POST localhost: 3333/videos
-
-// DELETE localhost:3333/videos/l
-
 import { fastify } from 'fastify'
+import { DatabaseMemory } from './database-memory.js'
 
 const server = fastify()
 
-server.get('/', () => {
-    return 'nothing to see'
+// GET, POST, PUT, DELETE, PATCH
+
+server.post('/videos', () => {
+    return 'create videos'
 })
 
-server.get('/hello', () => {
-    return 'hello world'
+server.get('/videos', () => {
+    return 'read a video'
 })
 
-server.get('/bye', () => {
-    return 'bye world'
+// Route parameter, the parameter specifying the target (id)
+
+server.put('/videos/:id', () => {
+    return 'update video'
+})
+
+server.delete('/videos/:id', () => {
+    return 'delete video'
 })
 
 server.listen({
