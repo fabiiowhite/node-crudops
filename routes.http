@@ -1,0 +1,30 @@
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+{
+    "title": "video 1",
+    "description": "This is the first video.",
+    "duration":  60
+}
+
+###
+
+GET http://localhost:3333/videos
+
+###
+
+//Add the ID of the created video inside the curly brackets
+PUT http://localhost:3333/videos/{ADD_ID_HERE}
+Content-Type: application/json
+
+
+{
+    "title": "updated video",
+    "description": "This is the updated video.",
+    "duration":  120
+}
+
+###
+
+//Add the ID of the created video inside the curly brackets
+DELETE http://localhost:3333/videos/{ADD_ID_HERE}
