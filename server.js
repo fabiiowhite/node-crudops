@@ -16,10 +16,14 @@ import { fastify } from 'fastify'
 const server = fastify()
 
 server.get('/', () => {
-    return 'hello world'
+    return 'nothing to see'
 })
 
 server.get('/hello', () => {
+    return 'hello world'
+})
+
+server.get('/bye', () => {
     return 'bye world'
 })
 
