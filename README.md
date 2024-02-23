@@ -81,6 +81,4 @@ DELETE http://localhost:3333/videos/{id}
 
 ## Development 🛠️
 
-This API uses the Fastify framework for its simplicity and high performance. The data is stored in a local Map, making CRUDOps ideal for educational purposes or small projects. If you're looking to expand this project, consider implementing persistence with a database or adding more features to the video management capabilities.
-
-Enjoy building and managing your video collection with CRUDOps! 🚀
+This API uses the Fastify framework for its simplicity and high performance. The data is stored in a local Map, making CRUDOps ideal for educational purposes or small projects. Enjoy building and managing your video collection with CRUDOps! 🚀
